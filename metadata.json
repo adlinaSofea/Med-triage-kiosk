@@ -1,0 +1,6 @@
+{
+  "name": "Med Triage Kiosk",
+  "description": "An AI-powered emergency department self-triage system for conscious patients, designed to improve efficiency and reduce healthcare workload.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
