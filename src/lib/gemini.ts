@@ -40,7 +40,7 @@ export async function getTriageResult(
       model: "gemini-3-flash-preview",
       contents: prompt,
       config: {
-        systemInstruction: "You are a highly experienced Emergency Department Triage Nurse AI. Output only JSON that matches the required schema.",
+        systemInstruction: "You are a professional Emergency Department Triage Nurse AI. Your goal is to provide a clear, calm, and accurate assessment. When providing 'nextStep' and 'redFlags', use patient-friendly language that reduces confusion. The 'detailedInstructions' should explain the triage process (e.g., why they are in a specific zone) and what the patient should expect next (wait times, registration, etc.). Output only JSON.",
         responseMimeType: "application/json",
         responseSchema: {
           type: Type.OBJECT,
@@ -56,7 +56,7 @@ export async function getTriageResult(
             },
             reason: {
               type: Type.STRING,
-              description: "Single sentence rationale for this classification."
+              description: "Single sentence rationale for this classification written clearly for a patient."
             },
             conditions: {
               type: Type.ARRAY,
@@ -66,14 +66,18 @@ export async function getTriageResult(
             redFlags: {
               type: Type.ARRAY,
               items: { type: Type.STRING },
-              description: "List of red flags detected or to watch out for."
+              description: "Clear list of warning signs that would require immediate attention if they occur."
             },
             nextStep: {
               type: Type.STRING,
-              description: "Immediate next step for the patient."
+              description: "The absolute most important immediate action the patient needs to take."
+            },
+            detailedInstructions: {
+              type: Type.STRING,
+              description: "A patient-friendly explanation of why they were triaged this way and what their experience in the care zone will be like (e.g. 'You will be seen by a doctor who will first...')."
             }
           },
-          required: ["urgency", "urgencyLabel", "reason", "conditions", "redFlags", "nextStep"]
+          required: ["urgency", "urgencyLabel", "reason", "conditions", "redFlags", "nextStep", "detailedInstructions"]
         }
       }
     });
@@ -89,7 +93,9 @@ export async function getTriageResult(
       reason: 'AI analysis unavailable. Pre-clinical assessment suggests urgent review.',
       conditions: ['Undetermined condition'],
       redFlags: ['Please alert a nurse immediately if condition worsens'],
-      nextStep: 'Proceed to the designated yellow waiting area and wait for your name to be called.'
+      nextStep: 'Proceed to the designated yellow waiting area.',
+      detailedInstructions: 'Since your assessment couldn\'t be completed automatically, we have placed you in the Yellow Zone to ensure you are seen quickly. Please wait in the waiting area, a nurse will call you shortly for a manual assessment.'
     };
   }
 }
+
