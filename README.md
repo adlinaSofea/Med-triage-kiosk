@@ -61,7 +61,7 @@ A self-service AI triage kiosk at the ED entrance:
 - Validated Gemini responses across all urgency scenarios
 - Published and deployed application directly to Google Cloud Run
 - Monitored API usage and response quality
-### ✅ Gemini API — gemini-3-flash-preview (Intelligence)
+### Gemini API — gemini-3-flash-preview (Intelligence)
 Core AI reasoning engine. Receives structured patient data and returns:
  
 ```json
