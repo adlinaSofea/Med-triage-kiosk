@@ -48,7 +48,7 @@ A self-service AI triage kiosk at the ED entrance:
 | Layer | Technology |
 |-------|-----------|
 | AI Prompt Design & Testing | **Google AI Studio** |
-| AI Model | **Gemini API (gemini-3-flash-preview)** |
+| AI Model | **Gemini API (gemini-3-flash)** |
 | Deployment | **Google Cloud Run** |
 | Frontend | React + TypeScript + Vite |
 | Styling | CSS |
