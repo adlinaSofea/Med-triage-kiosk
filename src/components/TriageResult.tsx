@@ -176,29 +176,60 @@ export default function TriageResult({ patient, symptoms, onReset }: TriageResul
           </section>
 
           {/* Triage Zone Card */}
-          <section className="bg-white border border-white/60 rounded-3xl p-6 text-center shadow-sm">
-            <div className="text-4xl font-black text-primary mb-1">{result.urgency}</div>
-            <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Triage Zone</div>
+          <section className={cn(
+            "border rounded-3xl p-6 text-center shadow-md transition-all duration-500 flex flex-col justify-center items-center",
+            config.bg,
+            config.text,
+            "border-transparent"
+          )}>
+            <div className="text-4xl font-black mb-1 tracking-tighter">{result.urgency}</div>
+            <div className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-80">Triage Zone</div>
           </section>
         </div>
 
         {/* Instructions Card */}
-        <section className="bg-white/60 backdrop-blur-md border border-white/80 rounded-3xl p-8 flex-1">
-          <h3 className="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
-            Next Steps
-          </h3>
-          <ul className="space-y-3">
-            <li className="flex gap-3 text-sm font-medium text-slate-700">
-              <span className="text-primary font-bold" aria-hidden="true">→</span>
-              {result.nextStep}
-            </li>
-            {result.redFlags.map((flag, idx) => (
-              <li key={idx} className="flex gap-3 text-sm font-medium text-slate-700">
-                <span className="text-primary font-bold" aria-hidden="true">→</span>
-                {flag}
-              </li>
-            ))}
-          </ul>
+        <section className="bg-white/60 backdrop-blur-md border border-white/80 rounded-3xl p-8 flex-1 space-y-8">
+          <div>
+            <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-4 flex items-center gap-2">
+              <Zap className="w-3.5 h-3.5 text-primary" />
+              Immediate Priority
+            </h3>
+            <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 flex gap-4 items-start">
+              <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+                <CheckCircle2 className="w-5 h-5 text-primary" />
+              </div>
+              <p className="text-sm font-bold text-slate-800 leading-relaxed">
+                {result.nextStep}
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-4 flex items-center gap-2">
+              <ClipboardList className="w-3.5 h-3.5 text-slate-400" />
+              What to Expect
+            </h3>
+            <p className="text-sm font-medium text-slate-600 leading-relaxed bg-white/40 p-5 rounded-2xl border border-white/60">
+              {result.detailedInstructions}
+            </p>
+          </div>
+
+          {result.redFlags.length > 0 && (
+            <div>
+              <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-4 flex items-center gap-2 text-urgent">
+                <AlertTriangle className="w-3.5 h-3.5" />
+                Warning Signs - Alert Staff If
+              </h3>
+              <ul className="grid grid-cols-1 gap-2">
+                {result.redFlags.map((flag, idx) => (
+                  <li key={idx} className="flex gap-3 text-sm font-semibold text-slate-700 bg-urgent/5 border border-urgent/10 p-4 rounded-xl items-center">
+                    <span className="w-1.5 h-1.5 rounded-full bg-urgent shrink-0" aria-hidden="true" />
+                    {flag}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </section>
 
         <nav className="flex justify-center pt-2">
@@ -213,3 +244,4 @@ export default function TriageResult({ patient, symptoms, onReset }: TriageResul
     </motion.div>
   );
 }
+
