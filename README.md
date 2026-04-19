@@ -3,7 +3,7 @@
 > Track 3: Vital Signs (Healthcare & Wellbeing)
 > Organised by GDG On Campus UTM · Build with AI 2026
 
----
+
 ## Project Overview
 This project presents an AI-powered Emergency Department (ED) triage system designed to improve patient prioritisation and reduce overcrowding in Malaysian hospitals. The system allows patients to input their personal details and symptoms through a user-friendly web interface, after which the Gemini API is used to analyse the input and classify cases into **Critical, Urgent, or Non-Urgent categories**.
 
@@ -11,7 +11,7 @@ By leveraging the **Gemini** large language model, the system generates structur
 
 **Live Demo:** `[Cloud URL]`
 
----
+
 ## Problem Statement
 Emergency Departments (EDs) in Malaysia are increasingly overwhelmed due to rising patient demand and limited healthcare resources. A significant proportion of ED visits consist of non-urgent cases, which contributes to congestion, long waiting times, and delays in treating critically ill patients.
 
@@ -26,7 +26,7 @@ As a result, ED overcrowding can lead to:
 
 This project addresses these challenges by introducing an AI-assisted triage system that enables early patient screening, improves prioritisation, and supports more efficient emergency care delivery.
 
----
+
 
 ## Solution
 A self-service AI triage kiosk at the ED entrance:
@@ -40,7 +40,7 @@ A self-service AI triage kiosk at the ED entrance:
    - 🟢 **NON-URGENT** — General queue
 > **Scope:** Walk-in patients only. Accident and trauma cases go directly to medical staff as per standard hospital protocol.
 
----
+
 
 # Tech Stack
 | Layer | Technology |
@@ -52,7 +52,7 @@ A self-service AI triage kiosk at the ED entrance:
 | Styling | CSS |
 | Version Control | GitHub |
  
----
+
 
 ## Google AI Ecosystem — Build With AI Requirement
  
@@ -102,7 +102,7 @@ Triage Result Display
 Google Cloud Run (Live Deployment)
 ```
  
----
+
 Project Structure
  
 ```
@@ -140,7 +140,7 @@ Med-triage-kiosk/
 - **Smart fallback** — App works even if AI is temporarily unavailable
 - **Responsive design** — Works on tablet kiosk, mobile, and desktop
 
----
+
 
 AI Tools Disclosure
  
@@ -152,7 +152,7 @@ As required by hackathon rules, we disclose all AI tools used:
 | Gemini API | Core triage reasoning engine |
 | AI coding assistance | Development assistance — all code reviewed and understood by team |
 
----
+
 
 ## Responsible AI
  
@@ -164,7 +164,6 @@ As required by hackathon rules, we disclose all AI tools used:
 - Complies with **Google's AI Principles**
 - No bias, privacy violations, or potential for harm
 
----
 
 ## National Agenda Alignment
  
@@ -175,7 +174,7 @@ As required by hackathon rules, we disclose all AI tools used:
 | **NIMP 2030** | Indigenous AI solution by Malaysian student developers |
 | **MOH KPI** | Reduces ED wait times and nurse workload nationwide |
 
----
+
 
 ## 👥 Team
  
@@ -188,7 +187,7 @@ As required by hackathon rules, we disclose all AI tools used:
  
 **Category:** Student Category
  
----
+
  
 ## 🔗 Submission Links
  
