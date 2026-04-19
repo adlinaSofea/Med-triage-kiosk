@@ -1,6 +1,4 @@
-> ###Setup Instructions
- 
-### Prerequisites
+ ### Prerequisites
 - Node.js 18 or higher
 - npm
 - Gemini API key from [Google AI Studio](https://aistudio.google.com/apikey)
