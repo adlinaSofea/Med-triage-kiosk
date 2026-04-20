@@ -92,7 +92,7 @@ Patient (Browser / Tablet Kiosk)
           ↓
 React Frontend (TypeScript + Vite)
           ↓
-Gemini API — gemini-3-flash-preview
+Gemini API — gemini-3-flash
   ├── Structured clinical prompt
   ├── Multi-step reasoning
   └── Returns JSON response
