@@ -235,7 +235,7 @@ export default function TriageResult({ patient, symptoms, onReset }: TriageResul
         <nav className="flex justify-center pt-2">
           <button
             onClick={onReset}
-            className="w-full py-4 bg-primary text-white font-bold rounded-2xl shadow-xl shadow-primary/20 hover:bg-emerald-700 transition-all active:scale-[0.98]"
+            className="w-full py-4 bg-primary text-white font-bold rounded-2xl shadow-xl shadow-primary/20 hover:bg-sky-600 transition-all active:scale-[0.98]"
           >
             Start New Assessment
           </button>
@@ -244,4 +244,5 @@ export default function TriageResult({ patient, symptoms, onReset }: TriageResul
     </motion.div>
   );
 }
+
 
