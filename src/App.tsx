@@ -70,11 +70,11 @@ export default function App() {
       <div className="w-full max-w-[1024px] mx-auto bg-glass backdrop-blur-3xl border border-glass-border rounded-[2rem] shadow-2xl overflow-hidden flex flex-col min-h-[700px]">
         <header className="px-8 pt-8 pb-4 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-primary/20">
+            <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-blue-950 font-black text-xl shadow-lg shadow-primary/30">
               +
             </div>
-            <h1 className="text-2xl font-bold tracking-tight text-slate-800">
-              MedTriage <span className="text-primary">Kiosk</span>
+            <h1 className="text-2xl font-black tracking-tight text-slate-900">
+              MedTriage <span className="text-blue-900/60 font-medium">Kiosk</span>
             </h1>
           </div>
           
