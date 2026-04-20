@@ -10,7 +10,7 @@ This project presents an AI-powered Emergency Department (ED) triage system desi
 
 By leveraging the **Gemini** large language model, the system generates structured clinical insights, including urgency level, possible conditions, red flags, and recommended next steps in a consistent JSON format. This enables fast and reliable triage support for both patients and healthcare staff. This system demonstrates how AI-assisted triage can enhance decision-making, optimise patient flow, and reduce the burden on emergency department staff, contributing to more efficient and responsive healthcare services.
 
-**Live Demo:** https://med-triage-kiosk-768672121753.us-west1.run.app
+**Live Demo:** https://med-triage-kiosk-785843788420.us-west1.run.app/
 
 ---
 
@@ -204,7 +204,7 @@ As required by hackathon rules, we disclose all AI tools used:
 | Item | Link |
 |------|------|
 | GitHub Repository | https://github.com/adlinaSofea/Med-triage-kiosk |
-| Live App (Cloud Run) | https://med-triage-kiosk-768672121753.us-west1.run.app |
+| Live App (Cloud Run) | https://med-triage-kiosk-785843788420.us-west1.run.app/ |
 | Video Demo | [YouTube / Google Drive link] |
 | Presentation Slides | [Google Slides PDF link] |
  
