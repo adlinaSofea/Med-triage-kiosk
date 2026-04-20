@@ -4,9 +4,9 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   
-  --color-primary: #06a16e;
-  --color-urgent: #e63946;
-  --color-warning: #f4a261;
+  --color-primary: #0ea5e9;
+  --color-urgent: #ef4444;
+  --color-warning: #f59e0b;
   --color-glass: rgba(255, 255, 255, 0.75);
   --color-glass-border: rgba(255, 255, 255, 0.4);
 }
@@ -15,8 +15,8 @@
   body {
     @apply bg-[#f0f4f8] text-[#1a202c];
     background-image: 
-      radial-gradient(circle at 10% 20%, rgba(6, 161, 110, 0.1) 0%, transparent 40%),
-      radial-gradient(circle at 90% 80%, rgba(230, 57, 70, 0.1) 0%, transparent 40%);
+      radial-gradient(circle at 10% 20%, rgba(14, 165, 233, 0.1) 0%, transparent 40%),
+      radial-gradient(circle at 90% 80%, rgba(239, 68, 68, 0.1) 0%, transparent 40%);
   }
 
   /* Custom focus style for medical terminal aesthetic */
@@ -24,4 +24,3 @@
     @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-[#f0f4f8] transition-all duration-200;
   }
 }
-
