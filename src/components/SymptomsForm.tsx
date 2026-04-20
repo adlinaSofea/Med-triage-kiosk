@@ -267,7 +267,7 @@ export default function SymptomsForm({ initialData, onNext, onBack }: SymptomsFo
             </button>
             <button
               type="submit"
-              className="flex-[2] py-5 px-6 bg-primary hover:bg-emerald-700 text-white font-black uppercase tracking-widest text-sm rounded-2xl transition-all duration-300 shadow-xl shadow-primary/20 active:scale-[0.98] hover:shadow-2xl hover:-translate-y-0.5"
+              className="flex-[2] py-5 px-6 bg-primary hover:bg-sky-600 text-white font-black uppercase tracking-widest text-sm rounded-2xl transition-all duration-300 shadow-xl shadow-primary/20 active:scale-[0.98] hover:shadow-2xl hover:-translate-y-0.5"
             >
               Get Triage Result
             </button>
