@@ -41,7 +41,7 @@ export default function StepIndicator({ currentStep }: StepIndicatorProps) {
                 className={cn(
                   "w-2 h-2 rounded-full transition-all duration-300",
                   isCurrent
-                    ? "bg-primary shadow-[0_0_0_4px_rgba(6,161,110,0.2)]"
+                    ? "bg-primary shadow-[0_0_0_4px_rgba(14,165,233,0.2)]"
                     : isCompleted
                     ? "bg-primary"
                     : "bg-slate-300"
