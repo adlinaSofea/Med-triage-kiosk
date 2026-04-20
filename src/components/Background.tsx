@@ -18,7 +18,7 @@ export default function Background() {
           repeat: Infinity,
           ease: "linear",
         }}
-        className="absolute -top-20 -left-20 h-96 w-96 rounded-full bg-emerald-100/50 blur-3xl"
+        className="absolute -top-20 -left-20 h-96 w-96 rounded-full bg-sky-100/50 blur-3xl"
       />
       <motion.div
         animate={{
@@ -53,8 +53,9 @@ export default function Background() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute top-10 right-1/4 h-48 w-48 rounded-full bg-emerald-50/80 blur-2xl"
+        className="absolute top-10 right-1/4 h-48 w-48 rounded-full bg-blue-50/80 blur-2xl"
       />
     </div>
   );
 }
+
