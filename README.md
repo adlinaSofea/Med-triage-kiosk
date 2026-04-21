@@ -149,7 +149,7 @@ Med-triage-kiosk/
 
 ---
 
-AI Tools Disclosure
+## AI Tools Disclosure
  
 As required by hackathon rules, we disclose all AI tools used:
  
