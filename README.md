@@ -207,4 +207,5 @@ As required by hackathon rules, we disclose all AI tools used:
 | Live App (Cloud Run) | https://med-triage-kiosk-785843788420.us-west1.run.app/ |
 | Video Demo | https://youtu.be/LyaxibrU28M |
 | Presentation Slides | https://docs.google.com/presentation/d/1Bsn9HfrO9rAJGOFaoTR1l1uiuONPKgE_6-RFpEbC8yU/edit?usp=sharing |
+| Protoype Documentation | https://docs.google.com/document/d/1_YuNOfURCKo0E5YJGxGktXDoUkoFXPsGhvUlJZSvM94/edit?usp=sharing |
  
