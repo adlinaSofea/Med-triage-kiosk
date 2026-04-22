@@ -192,7 +192,7 @@ As required by hackathon rules, we disclose all AI tools used:
 | NUR ADLINA SOFEA BINTI MAHDZIR | AI Integration (Gemini API) + Deployment (Cloud Run) | UniKL MIIT |
 | MUHAMMAD AKMAL ZAEEM BIN ABD JAMIL | Frontend (React + UI/UX) + Deployment (Cloud Run)| UniKL MIIT |
 | NOR NAJLAH HANINI BINTI HAIRUL NIZAM | Documentation + Slides | UniKL MIIT |
-| MUHAMMAD IZZAT A'KIF BIN MOHD SANUSI| Frontend (UI) | UniKL MIIT |
+| MUHAMAD IZZAT A'KIF BIN MOHD SANUSI| Frontend (UI) | UniKL MIIT |
  
 **Category:** Student Category
 
