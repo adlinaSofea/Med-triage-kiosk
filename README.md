@@ -205,6 +205,6 @@ As required by hackathon rules, we disclose all AI tools used:
 |------|------|
 | GitHub Repository | https://github.com/adlinaSofea/Med-triage-kiosk |
 | Live App (Cloud Run) | https://med-triage-kiosk-785843788420.us-west1.run.app/ |
-| Video Demo | [YouTube / Google Drive link] |
+| Video Demo | https://youtu.be/LyaxibrU28M |
 | Presentation Slides | https://docs.google.com/presentation/d/1Bsn9HfrO9rAJGOFaoTR1l1uiuONPKgE_6-RFpEbC8yU/edit?usp=sharing |
  
